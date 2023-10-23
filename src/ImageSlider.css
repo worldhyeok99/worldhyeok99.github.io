@@ -1,0 +1,36 @@
+
+.image-slider {
+  position: relative;
+  text-align: center;
+}
+
+.image-slider img {
+  max-width: 100%;
+  max-height: 300px;
+}
+
+.image-slider button {
+
+  background-color: #000;
+  color: white;
+  border: none;
+  width:10px;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+/* 이전 및 다음 버튼 스타일 추가 */
+.image-slider button.previous {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translate(0, -50%);
+}
+
+.image-slider button.next {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translate(0, -50%);
+}
