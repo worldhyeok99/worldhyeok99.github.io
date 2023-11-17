@@ -30,7 +30,7 @@
         </div>
         <div class="landing-desc-box">
           <div class="sec-top">
-            <h2 class="sec-tit">EIR MAX - APS - 200</h2>
+            <h2 class="sec-tit">AIR MAX - APS - 200</h2>
             <p class="sec-desc">shoes life style</p>
           </div>
           <a href="detail.html?8" class="landing-detail-link">More</a>
@@ -48,7 +48,7 @@
         <li class="new-box-list">
           <a href="detail.html?17" class="new-item-link">
             <img
-              src="./assets/shoes_white3.png"
+              src="./assets/shoes_yellow.png"
               alt="new goods"
               class="new-item"
             />
@@ -82,7 +82,7 @@
           </a>
         </li>
         <li class="new-box-list">
-          <a href="detail.html?19" class="new-item-link">
+          <a href="detail.html?18" class="new-item-link">
             <img
               src="./assets/shoes_yellow2.png"
               alt="new goods"
@@ -127,6 +127,11 @@
         <p class="sec-desc goods-desc">Choose the product you like</p>
       </div>
       <div class="goods-sort">
+        <select name="sort-choice" class="goods-item price-item">
+          <option value="default">Default</option>
+          <option value="lowToHigh">Low to High</option>
+          <option value="highToLow">High to Low</option>
+        </select>
         <select name="color-choice" class="goods-item color-item">
           <option selected>All Color</option>
           <option
@@ -207,7 +212,6 @@
 
     <!-- footer -->
     <footer data-include-path="footer.html"></footer>
-
     <script type="module" src="./js/main.js"></script>
     <script type="module" src="./js/loadItem.js"></script>
   </body>
