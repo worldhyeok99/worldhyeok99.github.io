@@ -159,13 +159,43 @@ function paginationHTML(num) {
 function selectHandler(shoesBox) {
   const sortContainer = document.querySelector(".goods-sort");
   if (sortContainer !== null) {
-    sortContainer.addEventListener("change", (e) =>
-      selectColorFilter(e, shoesBox)
-    );
+    const priceSortSelect = sortContainer.querySelector(".price-item");
+    const colorSortSelect = sortContainer.querySelector(".color-item");
+    
+    colorSortSelect.addEventListener("change", (e) => {
+      selectColorFilter(e, shoesBox);
+    });
+      
+    priceSortSelect.addEventListener("change", (e) => {
+      colorSortSelect.value = "All Color";
+      sortPrice(e, shoesBox);
+    });
+
+
   }
 }
 
-//color filtering
+// 정렬
+function sortPrice(e, shoesBox) {
+  const choiceSortBox = e.target;
+  const sortOption = choiceSortBox.value;
+    
+  const sortedShoes = shoesBox.sort((a, b) => {
+    if (sortOption === "lowToHigh") {
+      return a.price - b.price;
+    } else if (sortOption === "highToLow") {
+      return b.price - a.price;
+    } else if (sortOption === "default") {
+        return a.id - b.id;
+    }
+  });
+
+  pagination(sortedShoes);
+  loadCart(sortedShoes);
+  loadWish(sortedShoes);
+}
+
+// 색깔별 분류
 function selectColorFilter(e, shoesBox) {
   const choiceSortBox = e.target;
   const userChoiceColor =
