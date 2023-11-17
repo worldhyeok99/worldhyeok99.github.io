@@ -13,9 +13,11 @@ html, css, js로 구현한 간단한 쇼핑몰 프로젝트
 - 모바일 전용 사이드바 메뉴
 - scroll시, nav-menu 상단 고정
 
+
 2.New 블록
 - new goods section - 가로 스크롤
 - goods 클릭 시, Detail-Page 이동
+
 
 3.Goods 블록
 - data 받아와서 동적으로 list 출력
@@ -28,7 +30,7 @@ html, css, js로 구현한 간단한 쇼핑몰 프로젝트
 - 장바구니 총 수량 + 1 (최상단에 nav icon에 표시)
 - 재 클릭 시, 이미 cart에 들어가 있는 상품 고지 알림
 
-4. footer
+4.footer
 - 사이트정보, 약관 등
 
 
