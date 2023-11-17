@@ -345,6 +345,7 @@
 
 /* footer */
 .info-page {
+  font-family: "Noto Sans KR", sans-serif;
   background-color: black;
   height: 23rem;
   display: flex;
@@ -659,4 +660,5 @@
   .info-page .inner-copyright {
     font-size: 1.7rem;
   }
+
 }
