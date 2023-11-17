@@ -38,7 +38,7 @@
 
 - goods pagination
 
-- 색상별 분류, 가격순 정렬
+- 색상별 정렬
 
 - goods 클릭 시, Detail-Page로 이동
 

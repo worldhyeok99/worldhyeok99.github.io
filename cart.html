@@ -31,16 +31,31 @@
         <div class="cart-total">
           <dl class="total">
             <dt class="total-title">Total</dt>
-            <dd class="total-price"></dd>
+            <dd id = "saint" class="total-price"></dd>
           </dl>
         </div>
-        <a href="#" class="control-btn total-order">Order selected Items</a>
+        <button class="control-btn total-order">Order selected Items </button>
       </div>
-    </section>
-
+        <div class="order-popup hidden">
+          <div class="popup-container">
+            <h1>Order Information</h1>
+            <form action="#">
+              <label for="name"> <br> 주문자 이름:</label>
+              <input type="text" id="name" name="name" required>
+              <label for="phone">전화번호:</label> 
+              <input type="phone" id="phone" name="phone" required>
+              <label for="shippingAddress">주소:</label>
+              <textarea id="shippingAddress" name="shippingAddress" rows="3" required></textarea>
+              <label for="orderMessage">특이사항:</label>
+              <textarea id="orderMessage" name="shippingAddress" rows="1" required></textarea> <br>
+              <dd id="saint" class="total-price"></dd>
+              <input type="submit" class="control-btn" value="Submit Order">
+            </form>
+          </div>
+        </div>
+            </section>
     <!-- footer -->
     <footer data-include-path="footer.html"></footer>
-
     <script type="module" src="./js/main.js"></script>
     <script type="module" src="./js/loadItem.js"></script>
     <script type="module" src="./js/cartPage.js"></script>
