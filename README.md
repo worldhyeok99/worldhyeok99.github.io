@@ -7,17 +7,17 @@ html, css, js로 구현한 간단한 쇼핑몰 프로젝트
 
 ## 📚 Features
 
-### 📌 Home
+### Home
 
 1.헤더
 - 모바일 전용 사이드바 메뉴
 - scroll시, nav-menu 상단 고정
 
-2. New 블록
+2.New 블록
 - new goods section - 가로 스크롤
 - goods 클릭 시, Detail-Page 이동
 
-3. Goods 블록
+3.Goods 블록
 - data 받아와서 동적으로 list 출력
 - goods pagination
 - 가격별 정렬 및 색상별 분류 동시에 가능
@@ -50,7 +50,7 @@ html, css, js로 구현한 간단한 쇼핑몰 프로젝트
 
 <br/>
 
-### 📌 Detail-Page
+### Detail-Page
 
 - 좋아요 클릭 시, WishList에 저장
 - 장바구니 클릭시, Cart에 저장
