@@ -162,16 +162,6 @@
     },
     {
       "id": 17,
-      "productName": "Next Bron Soul V3",
-      "price": 153000,
-      "color": "white",
-      "image": "./assets/shoes_white3.png",
-      "wish": false,
-      "cart": false,
-      "order": 0
-    },
-    {
-      "id": 18,
       "productName": "Troll Shine Bolt",
       "price": 199000,
       "color": "yellow",
@@ -181,7 +171,7 @@
       "order": 0
     },
     {
-      "id": 19,
+      "id": 18,
       "productName": "Troll Shine Bolt V2",
       "price": 200000,
       "color": "yellow",
