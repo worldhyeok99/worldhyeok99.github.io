@@ -14,15 +14,6 @@
 
 <br/>
 
-## 🖼 UI
-
-![제목 없음2](https://user-images.githubusercontent.com/70693728/107845119-8d147580-6e1c-11eb-8efe-df0921e39aac.png)
-
-- [Link](https://heeyeonjeong.github.io/ecommerce-website/)
-- [Problem & Solution 정리](https://heeyeonjeong.tistory.com/68)
-
-<br/>
-
 ## 📚 Features
 
 ### 📌 Home
