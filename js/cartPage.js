@@ -76,7 +76,6 @@ export function paintCartPage() {
 export function saveCart(saveCartGoods) {
   localStorage.setItem("cartList", JSON.stringify(saveCartGoods));
 }
-
 //cart goods
 export function loadCart(shoesBox) {
   const cartbtns = document.querySelectorAll(".cart-icon");
@@ -184,6 +183,29 @@ function cartListHandler(e) {
   totalPrice();
 }
 
+function initializePopup() {
+  const orderBtn = document.querySelector('.total-order');
+  const popup = document.querySelector('.order-popup');
+
+  orderBtn.addEventListener('click', function () {
+    popup.classList.remove('hidden');
+  });
+
+  // 다른 곳을 클릭하면 팝업이 닫히도록
+  document.addEventListener('click', function (event) {
+    if (!popup.contains(event.target) && !orderBtn.contains(event.target)) {
+      popup.classList.add('hidden');
+    }
+  });
+}
+
+// 페이지 로드 후 자동으로 initializePopup 함수 호출
+  document.addEventListener('DOMContentLoaded', function () {
+    // 팝업 초기화 함수 호출
+    initializePopup();
+  });
+
 if (cartContainer !== null) {
   cartContainer.addEventListener("click", cartListHandler);
 }
+
