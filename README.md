@@ -4,7 +4,7 @@ html, css, js로 구현한 간단한 쇼핑몰 프로젝트
 ## ⚙ Stack
 - HTML, CSS, JavaScript
 - Mock Data 만들어서 사용
-
+- html, Rayout 및 에셋 https://github.com/topics/ecommerce-website?l=html
 ## 📚 Features
 
 ### Home
