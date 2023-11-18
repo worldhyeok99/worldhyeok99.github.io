@@ -57,10 +57,12 @@ html, css, js로 구현한 간단한 쇼핑몰 프로젝트
 - 좋아요 클릭 시, WishList에 저장
 - 장바구니 클릭시, Cart에 저장
 
-### etc front-end design 
+### front-end design, etc 
 
 - 모든 크기의 창에서 호환, css flex 속성 활용
 - 버튼 hover 속성 활용, layout 별 margin 속성 활용
 - 영문폰트 Source Serif Pro, wght
 - 한글폰트 Noto Sans KR, sans-serif
 - 위시리스트 및 카트 데이터는 localStorage에 저장
+
+- IDE 작업 환경, goorm IDE (Ubuntu 18.0.4)
