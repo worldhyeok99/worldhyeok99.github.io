@@ -34,6 +34,7 @@ html, css, js로 구현한 간단한 쇼핑몰 프로젝트
 - 사이트정보, 약관 등
 
 
+
 ### WishList-Page
 
 - WishList-Page에서 상품 삭제 기능
@@ -50,14 +51,16 @@ html, css, js로 구현한 간단한 쇼핑몰 프로젝트
 - cart 비어있을 시, 고지 문구
 - order 버튼 클릭 시 주문서 팝업 출력
 
-<br/>
+
 
 ### Detail-Page
 
 - 좋아요 클릭 시, WishList에 저장
 - 장바구니 클릭시, Cart에 저장
 
-### front-end design, etc 
+
+
+### Front-end design, etc 
 
 - 모든 크기의 창에서 호환, css flex 속성 활용
 - 버튼 hover 속성 활용, layout 별 margin 속성 활용
