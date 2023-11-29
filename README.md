@@ -1,4 +1,4 @@
-# ShoesMall Website
+# Shoping Mall Website
 html, css, js로 구현한 간단한 쇼핑몰 프로젝트
 
 ## ⚙ Stack
@@ -21,6 +21,8 @@ html, css, js로 구현한 간단한 쇼핑몰 프로젝트
 - data 받아와서 동적으로 list 출력
 - goods pagination
 - 가격별 정렬 및 색상별 분류 동시에 가능
++ 새로운 카테고리 추가 
++ 카테고리별 분류 가능.
 - goods 클릭 시, Detail-Page로 이동
 - 좋아요 클릭시, WishList에 저장
 - icon 색상 변경 (재클릭시 원 상태 + WishList에서 삭제)
@@ -54,3 +56,7 @@ html, css, js로 구현한 간단한 쇼핑몰 프로젝트
 
 - 좋아요 클릭 시, WishList에 저장
 - 장바구니 클릭시, Cart에 저장
+
+### ETC
+
++ 로그인, 회원가입 기능 팝업 추가
