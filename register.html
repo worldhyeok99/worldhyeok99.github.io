@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/cart.css" />
+    <link rel="stylesheet" href="./css/detail.css" />
     <link
       href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
       rel="stylesheet"
@@ -21,43 +21,34 @@
     <!-- header -->
     <header data-include-path="header.html"></header>
 
-    <!-- cart -->
-    <section class="cart-page">
-      <div class="empty">
-        <p>Your cart is empty</p>
-      </div>
-      <div class="cart-container-box hidden">
-        <ul class="cart-container"></ul>
-        <div class="cart-total">
-          <dl class="total">
-            <dt class="total-title">Total</dt>
-            <dd id = "saint" class="total-price"></dd>
-          </dl>
-        </div>
-        <button class="control-btn total-order">Order selected Items </button>
-      </div>
-        <div class="order-popup hidden">
-          <div class="popup-container">
-            <h1>Order Information</h1>
+    <!-- goods detail-->
+    <main class="detail-page">
+      <div class="sba">
+          <h1>Sign up</h1>
             <form action="#">
+              <label for="email"> <br> E-Mail</label>
+              <input type="email" id="email" name="email" required>
+              <label for="account"> <br> ID </label>
+              <input type="text" id="account" name="account" required>
+              <label for="password"> <br> 비밀번호 </label>
+              <input type="password" id="password" name="password" required>
+              <label for="password"> <br> 비밀번호 확인 </label>
+              <input type="password" id="password" name="password" required>  
               <label for="name"> <br> 주문자 이름:</label>
               <input type="text" id="name" name="name" required>
               <label for="phone">전화번호:</label> 
               <input type="phone" id="phone" name="phone" required>
               <label for="shippingAddress">주소:</label>
               <textarea id="shippingAddress" name="shippingAddress" rows="3" required></textarea>
-              <label for="orderMessage">특이사항:</label>
-              <textarea id="orderMessage" name="shippingAddress" rows="1" required></textarea> <br>
-              <dd id="saint" class="total-price"></dd>
-              <input type="submit" class="control-btn" value="Submit Order">
+              <input type="submit" class="control-btn" value="Register Now">
             </form>
-          </div>
-        </div>
-            </section>
+      </div>
+    </main>
+
     <!-- footer -->
     <footer data-include-path="footer.html"></footer>
+
     <script type="module" src="./js/main.js"></script>
     <script type="module" src="./js/loadItem.js"></script>
-    <script type="module" src="./js/cartPage.js"></script>
   </body>
 </html>

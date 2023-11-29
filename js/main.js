@@ -43,3 +43,19 @@ function scrollControll() {
 }
 
 window.addEventListener("scroll", scrollControll);
+
+const loginPopup = document.getElementById("login-popup");
+
+function openPopup() { 
+  event.preventDefault();
+  loginPopup.style.display = "block";
+
+}
+
+window.addEventListener("click", (event) => {
+  if (event.target.classList.contains("sign-total")) {
+    openPopup();
+  } else if (loginPopup.style.display === "block" && !loginPopup.contains(event.target)) {
+      loginPopup.style.display = "none";   
+  }
+});

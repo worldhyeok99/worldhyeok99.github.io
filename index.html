@@ -16,17 +16,16 @@
       href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <title>ShoesMall</title>
+    <title>A Mall</title>
   </head>
   <body>
     <!-- header -->
     <header data-include-path="header.html"></header>
-
     <!-- landing Page -->
     <section id="home" class="home">
       <div class="landing">
         <div class="landing-image-box">
-          <img src="./assets/shoes_pink.png" alt="shoes-image" />
+          <img src="./assets/shoes_brown2.png" alt="shoes-image" />
         </div>
         <div class="landing-desc-box">
           <div class="sec-top">
@@ -37,7 +36,21 @@
         </div>
       </div>
     </section>
+    <div id="login-popup" class="hidden">
+        <form id="login-form">
+             <h1>Sign In</h1> <br>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required> <br> <br>
 
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required> <br> <br>
+
+            <button type="submit" style="font-size:1.8rem;">Sign In</button>
+            <div style="float: right; font-size:1.5rem; margin-right:3px;">
+              <a href="register.html">Sign Up</a>
+            </div>
+        </form>
+    </div>
     <!-- new item-->
     <section id="new" class="new-page">
       <div class="sec-top new-top">
@@ -46,29 +59,29 @@
       </div>
       <ul class="new-box">
         <li class="new-box-list">
-          <a href="detail.html?17" class="new-item-link">
+          <a href="detail.html?105" class="new-item-link">
             <img
-              src="./assets/shoes_yellow.png"
+              src="./assets/cloth_venhit_grey.png"
               alt="new goods"
-              class="new-item"
+              class="new-item2"
             />
           </a>
         </li>
         <li class="new-box-list">
-          <a href="detail.html?16" class="new-item-link">
+          <a href="detail.html?106" class="new-item-link">
             <img
-              src="./assets/shoes_white2.png"
+              src="./assets/cloth_venhit_white.png"
               alt="new goods"
-              class="new-item"
+              class="new-item2"
             />
           </a>
         </li>
         <li class="new-box-list">
-          <a href="detail.html?3" class="new-item-link">
+          <a href="detail.html?107" class="new-item-link">
             <img
-              src="./assets/shoes_blue.png"
+              src="./assets/cloth_venhit_green.png"
               alt="new goods"
-              class="new-item"
+              class="new-item2"
             />
           </a>
         </li>
@@ -127,6 +140,23 @@
         <p class="sec-desc goods-desc">Choose the product you like</p>
       </div>
       <div class="goods-sort">
+          <select name="category-choice" class="goods-item category-item">
+          <option selected>All Product</option>
+          <option
+            data-key="category"
+            data-value="shoes"
+            class="choice-sort select-shoes"
+          >
+            Shoes
+          </option>
+          <option
+            data-key="category"
+            data-value="cloth"
+            class="choice-sort select-cloth"
+          >
+            Cloth
+          </option>
+        </select>
         <select name="sort-choice" class="goods-item price-item">
           <option value="default">Default</option>
           <option value="lowToHigh">Low to High</option>
@@ -208,11 +238,56 @@
       </div>
       <ul class="goods-container"></ul>
       <ol class="goods-pagination"></ol>
+        
     </main>
-
+ <style>
+      /* Add the following style to set the footer initially hidden */
+      footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        display: none;
+        text-align: center;
+      }
+    </style>
     <!-- footer -->
-    <footer data-include-path="footer.html"></footer>
+    <footer data-include-path="footer.html">
+      This is the footer.
+    </footer>
     <script type="module" src="./js/main.js"></script>
     <script type="module" src="./js/loadItem.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        let scrolled = false;
+        const footer = document.querySelector("footer");
+
+        function showFooterOnScroll() {
+          // Check if the user has scrolled to the bottom
+          if (
+            window.innerHeight + window.scrollY >=
+            document.body.scrollHeight
+          ) {
+            // If scrolled is false, set it to true and return
+            if (!scrolled) {
+              scrolled = true;
+              return;
+            }
+
+            // If scrolled is true, show the footer
+            footer.style.display = "block";
+          } else {
+            // If not at the bottom, hide the footer
+            footer.style.display = "none";
+          }
+        }
+
+        // Attach the showFooterOnScroll function to the scroll event
+        window.addEventListener("scroll", showFooterOnScroll);
+      });
+    </script>
   </body>
 </html>

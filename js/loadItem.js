@@ -161,11 +161,15 @@ function selectHandler(shoesBox) {
   if (sortContainer !== null) {
     const priceSortSelect = sortContainer.querySelector(".price-item");
     const colorSortSelect = sortContainer.querySelector(".color-item");
-    
+    const categorySelect = sortContainer.querySelector(".category-item");
+    categorySelect.addEventListener("change", (e) => {
+      selectCategoryFilter(e, shoesBox);
+    });
+      
     colorSortSelect.addEventListener("change", (e) => {
       selectColorFilter(e, shoesBox);
     });
-      
+
     priceSortSelect.addEventListener("change", (e) => {
       colorSortSelect.value = "All Color";
       sortPrice(e, shoesBox);
@@ -207,7 +211,17 @@ function selectColorFilter(e, shoesBox) {
   loadCart(userSelect);
   loadWish(userSelect);
 }
-
+function selectCategoryFilter(e, shoesBox) {
+  const choiceSortBox = e.target;
+  const userChoiceCategory =
+    choiceSortBox.options[choiceSortBox.selectedIndex].dataset;
+  const userSelect = shoesBox.filter(
+    (shoes) => shoes[userChoiceCategory.key] === userChoiceCategory.value
+  );
+  pagination(userSelect);
+  loadCart(userSelect);
+  loadWish(userSelect);
+}
 //main
 asyncMarkupData()
   .then(() => {

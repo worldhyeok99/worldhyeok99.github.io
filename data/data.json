@@ -2,6 +2,7 @@
   "shoesBox": [
     {
       "id": 1,
+      "category": "shoes",
       "productName": "Shoes Asset BLK",
       "price": 105000,
       "color": "black",
@@ -12,6 +13,7 @@
     },
     {
       "id": 2,
+      "category": "shoes",
       "productName": "Shoes Asset BLK V2",
       "price": 135000,
       "color": "black",
@@ -22,6 +24,7 @@
     },
     {
       "id": 3,
+      "category": "shoes",
       "productName": "Shoes Asset BLU",
       "price": 120000,
       "color": "blue",
@@ -32,6 +35,7 @@
     },
     {
       "id": 4,
+      "category": "shoes",
       "productName": "Shoes Asset BRW",
       "price": 110000,
       "color": "brown",
@@ -42,6 +46,7 @@
     },
     {
       "id": 5,
+      "category": "shoes",
       "productName": "Shoes Asset GRN",
       "price": 156000,
       "color": "green",
@@ -52,6 +57,7 @@
     },
     {
       "id": 6,
+      "category": "shoes",
       "productName": "Shoes Asset GRN V2",
       "price": 190000,
       "color": "green",
@@ -62,6 +68,7 @@
     },
     {
       "id": 7,
+      "category": "shoes",
       "productName": "Shoes Asset GRY",
       "price": 160000,
       "color": "grey",
@@ -72,6 +79,7 @@
     },
     {
       "id": 8,
+      "category": "shoes",
       "productName": "Shoes Asset PNK",
       "price": 185000,
       "color": "pink",
@@ -82,6 +90,7 @@
     },
     {
       "id": 9,
+      "category": "shoes",
       "productName": "Shoes Asset PNK V2",
       "price": 190000,
       "color": "pink",
@@ -92,6 +101,7 @@
     },
     {
       "id": 10,
+      "category": "shoes",
       "productName": "Shoes Asset PNK V3",
       "price": 215000,
       "color": "pink",
@@ -102,6 +112,7 @@
     },
     {
       "id": 11,
+      "category": "shoes",
       "productName": "Shoes Asset PUR",
       "price": 265000,
       "color": "purple",
@@ -112,6 +123,7 @@
     },
     {
       "id": 12,
+      "category": "shoes",
       "productName": "Shoes Asset RED",
       "price": 138000,
       "color": "red",
@@ -122,6 +134,7 @@
     },
     {
       "id": 13,
+      "category": "shoes",
       "productName": "Shoes Asset RED V2",
       "price": 183000,
       "color": "red",
@@ -132,6 +145,7 @@
     },
     {
       "id": 14,
+      "category": "shoes",
       "productName": "Shoes Asset RED V3",
       "price": 175000,
       "color": "red",
@@ -142,6 +156,7 @@
     },
     {
       "id": 15,
+      "category": "shoes",
       "productName": "Shoes Asset WHT",
       "price": 194000,
       "color": "white",
@@ -152,6 +167,7 @@
     },
     {
       "id": 16,
+      "category": "shoes",
       "productName": "Shoes Asset WHT V2",
       "price": 240000,
       "color": "white",
@@ -162,6 +178,7 @@
     },
     {
       "id": 17,
+      "category": "shoes",
       "productName": "Shoes Asset WHT V3",
       "price": 153000,
       "color": "white",
@@ -172,6 +189,7 @@
     },
     {
       "id": 18,
+      "category": "shoes",
       "productName": "Shoes Asset YLW",
       "price": 199000,
       "color": "yellow",
@@ -182,6 +200,7 @@
     },
     {
       "id": 19,
+      "category": "shoes",
       "productName": "Shoes Asset YLW V2",
       "price": 200000,
       "color": "yellow",
@@ -189,6 +208,105 @@
       "wish": false,
       "cart": false,
       "order": 0
-    }
-  ]
+    },  
+    {
+      "id": 102,
+      "category": "cloth",
+      "productName": "Cloth Asset new 2",
+      "price": 89000,
+      "color": "white",
+      "image": "./assets/cloth_challenge_white.png",
+      "wish": false,
+      "cart": false,
+      "order": 0
+    },  
+    {
+      "id": 103,
+      "category": "cloth",
+      "productName": "Cloth Asset new 3",
+      "price": 55000,
+      "color": "brown",
+      "image": "./assets/cloth_cruneck_brown.png",
+      "wish": false,
+      "cart": false,
+      "order": 0
+    }, 
+    {
+      "id": 104,
+      "category": "cloth",
+      "productName": "Cloth Asset new 4",
+      "price": 55000,
+      "color": "brown",
+      "image": "./assets/cloth_cruneck_brown_2.png",
+      "wish": false,
+      "cart": false,
+      "order": 0
+    },
+    {
+      "id": 105,
+      "category": "cloth",
+      "productName": "Cloth Asset new 5",
+      "price": 115000,
+      "color": "grey",
+      "image": "./assets/cloth_venhit_grey.png",
+      "wish": false,
+      "cart": false,
+      "order": 0
+    },
+    {
+      "id": 106,
+      "category": "cloth",
+      "productName": "Cloth Asset new 6",
+      "price": 115000,
+      "color": "yellow",
+      "image": "./assets/cloth_venhit_white.png",
+      "wish": false,
+      "cart": false,
+      "order": 0
+    },  
+    {
+      "id": 107,
+      "category": "cloth",
+      "productName": "Cloth Asset new 7",
+      "price": 115000,
+      "color": "yellow",
+      "image": "./assets/cloth_venhit_green.png",
+      "wish": false,
+      "cart": false,
+      "order": 0
+    },  
+    {
+      "id": 108,
+      "category": "cloth",
+      "productName": "Cloth Asset new 8",
+      "price": 79000,
+      "color": "yellow",
+      "image": "./assets/cloth_whatitisnt_brown.png",
+      "wish": false,
+      "cart": false,
+      "order": 0
+    }, 
+    {
+      "id": 109,
+      "category": "cloth",
+      "productName": "Cloth Asset new 9",
+      "price": 79000,
+      "color": "yellow",
+      "image": "./assets/cloth_whatitisnt_blue.png",
+      "wish": false,
+      "cart": false,
+      "order": 0
+    },
+    {
+      "id": 110,
+      "category": "cloth",
+      "productName": "Cloth Asset new 10",
+      "price": 79000,
+      "color": "yellow",
+     "image": "./assets/cloth_whatitisnt_white2.png",
+      "wish": false,
+      "cart": false,
+      "order": 0
+    }     
+    ]
 }

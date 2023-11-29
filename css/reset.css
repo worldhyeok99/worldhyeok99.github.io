@@ -60,3 +60,44 @@ button {
   outline: none;
   background-color: transparent;
 }
+#login-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    background-color: #fff;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    display: none;
+    z-index: 10;
+}
+ h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+input[type="submit"] {
+  background-color: #fff;
+  width:300px;
+  max-width: 70%;
+  font-size: 2rem;
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+  text-align: left;
+  font-size: 2rem;
+  margin-bottom: 5px;
+}
